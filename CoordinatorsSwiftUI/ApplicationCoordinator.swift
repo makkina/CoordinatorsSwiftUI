@@ -49,7 +49,7 @@ final class ApplicationCoordinator: Coordinator {
     func build(sheet: Sheet) -> some View {
         switch sheet {
         case .alertView:
-            PopupView()
+            AlertView()
         }
     }
     
