@@ -27,6 +27,7 @@ struct ChildViewTwo: View {
                 Text("Pop To Root")
             }
         }
+        .navigationTitle("Child View Two")
     }
 }
 
