@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct tab1CoordinatorView: View {
+struct Tab3Coordinator: View {
     @EnvironmentObject var coordinator: ApplicationCoordinator
     
     var body: some View {
         NavigationStack(path: $coordinator.path) {
-            coordinator.build(page: .homeViewOne)
+            coordinator.build(page: .homeViewThree)
                 .sheet(item: $coordinator.sheet) {
                     coordinator.build(sheet: $0)
                 }
@@ -23,5 +23,5 @@ struct tab1CoordinatorView: View {
 }
 
 #Preview {
-    tab1CoordinatorView().environmentObject(ApplicationCoordinator())
+    Tab2Coordinator().environmentObject(ApplicationCoordinator())
 }

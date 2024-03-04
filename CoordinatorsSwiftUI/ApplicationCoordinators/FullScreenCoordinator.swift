@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct alertViewCoordinatorView: View {
+struct FullScreenCoordinator: View {
     @EnvironmentObject var childCoordinator: ApplicationCoordinator
     
     var body: some View {
@@ -23,5 +23,5 @@ struct alertViewCoordinatorView: View {
 }
 
 #Preview {
-    alertViewCoordinatorView().environmentObject(ApplicationCoordinator())
+    FullScreenCoordinator().environmentObject(ApplicationCoordinator())
 }

@@ -11,7 +11,22 @@ struct PopupViewHome: View {
                 
                 /// @action: Close Modal
                 Button { childCoordinator.closeSheet?.toggle() } label: {
-                    (Text("Close Entire modal &nbsp;") + Text(Image(systemName: "xmark.circle.fill")))
+                    (Text("Close Sheet (Sheet Context) &nbsp;") + Text(Image(systemName: "xmark.circle.fill")))
+                }
+
+                /// @action: Close Modal
+                Button { childCoordinator.closeFullScreenCover?.toggle() } label: {
+                    (Text("Close Full Screen (Full Screen Context) &nbsp;") + Text(Image(systemName: "xmark.circle.fill")))
+                }
+                
+                Divider()
+                
+                /// @action: Close Both: closeSheet & closeFullScreenCover
+                Button {
+                    childCoordinator.closeSheet?.toggle()
+                    childCoordinator.closeFullScreenCover?.toggle()
+                } label: {
+                    (Text("Close Entire modal (Shared Context) &nbsp;") + Text(Image(systemName: "xmark.circle.fill")))
                 }
                 
                 /// @action: Go To Next Screen
@@ -20,7 +35,7 @@ struct PopupViewHome: View {
                 }
             }
         }
-        .navigationTitle("Alert View Home")
+        .navigationTitle("Popup View Home")
     }
 }
 

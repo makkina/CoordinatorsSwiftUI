@@ -1,15 +1,15 @@
 import SwiftUI
 
-struct AlertView: View {
+struct FullScreenView: View {
     @EnvironmentObject var coordinator: ApplicationCoordinator
     @StateObject var childCoordinator = ApplicationCoordinator()
     
     var body: some View {
         VStack {
-            alertViewCoordinatorView()
+            FullScreenCoordinator()
                 .environmentObject(childCoordinator)
-                .onChange(of: childCoordinator.closeSheet) { _ in
-                    coordinator.dissmissSheet()
+                .onChange(of: childCoordinator.closeFullScreenCover) { _ in
+                    coordinator.dissmissFullscreenCover()
                 }
         }
     }
@@ -17,6 +17,6 @@ struct AlertView: View {
 
 #Preview {
     NavigationStack {
-        AlertView().environmentObject(ApplicationCoordinator())
+        FullScreenView().environmentObject(ApplicationCoordinator())
     }
 }

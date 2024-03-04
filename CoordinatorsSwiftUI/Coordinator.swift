@@ -6,6 +6,7 @@ protocol CoordinatorProtocol {
     var sheet: Sheet? { get }
     var fullScreenCover: FullScreenCover? { get }
     var closeSheet: Bool? { get }
+    var closeFullScreenCover: Bool? { get }
     
     func push(page: NavigationPage)
     func present(sheet: Sheet)
@@ -20,6 +21,7 @@ class Coordinator: CoordinatorProtocol, ObservableObject {
     @Published var sheet: Sheet?
     @Published var fullScreenCover: FullScreenCover?
     @Published var closeSheet: Bool? = false
+    @Published var closeFullScreenCover: Bool? = false
     
     func push(page: NavigationPage) {
         self.path.append(page)

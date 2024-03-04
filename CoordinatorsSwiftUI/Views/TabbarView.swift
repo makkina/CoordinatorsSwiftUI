@@ -15,21 +15,21 @@ struct TabbarView: View {
     var body: some View {
         VStack {
             TabView(selection: tabSelection()) {
-                tab1CoordinatorView()
+                Tab1Coordinator()
                     .environmentObject(tab1Coordinator)
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
                     .tag(Tab.tab1)
                 
-                tab2CoordinatorView()
+                Tab2Coordinator()
                     .environmentObject(tab2Coordinator)
                     .tabItem {
                         Label("Apple TV", systemImage: "homepod.and.appletv")
                     }
                     .tag(Tab.tab2)
                 
-                tab3CoordinatorView()
+                Tab3Coordinator()
                     .environmentObject(tab3Coordinator)
                     .tabItem {
                         Label("Settings", systemImage: "gear")

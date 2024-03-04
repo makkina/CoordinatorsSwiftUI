@@ -17,11 +17,11 @@ struct PodsView: View {
             
             /// FOOTER
             Spacer()
-            Button { coordinator.present(sheet: .alertView) } label: {
-                Text("Present to Alert View")
+            Button { coordinator.present(sheet: .sheetView) } label: {
+                Text("Present to Sheet View")
             }
-            Button { coordinator.present(fullScreenCover: .warningView) } label: {
-                Text("Present to Warning View")
+            Button { coordinator.present(fullScreenCover: .fullScreenView) } label: {
+                Text("Present to FullScreen View")
             }
         }
         .navigationTitle("Pods")

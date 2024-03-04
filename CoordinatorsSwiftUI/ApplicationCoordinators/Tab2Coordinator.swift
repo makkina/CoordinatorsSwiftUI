@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct tab2CoordinatorView: View {
+struct Tab2Coordinator: View {
     @EnvironmentObject var coordinator: ApplicationCoordinator
     
     var body: some View {
@@ -23,5 +23,5 @@ struct tab2CoordinatorView: View {
 }
 
 #Preview {
-    tab2CoordinatorView().environmentObject(ApplicationCoordinator())
+    Tab2Coordinator().environmentObject(ApplicationCoordinator())
 }

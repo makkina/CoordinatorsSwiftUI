@@ -12,18 +12,19 @@
 		F01A365B2B925A5E00989B71 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A365A2B925A5E00989B71 /* Coordinator.swift */; };
 		F01A365D2B925AAB00989B71 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A365C2B925AAB00989B71 /* ApplicationCoordinator.swift */; };
 		F01A365F2B925B1F00989B71 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A365E2B925B1F00989B71 /* HomeView.swift */; };
-		F01A36642B925CA600989B71 /* tab1CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36632B925CA600989B71 /* tab1CoordinatorView.swift */; };
-		F01A36662B925CB000989B71 /* tab2CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36652B925CB000989B71 /* tab2CoordinatorView.swift */; };
-		F01A36682B925CB600989B71 /* tab3CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36672B925CB600989B71 /* tab3CoordinatorView.swift */; };
+		F01A36642B925CA600989B71 /* Tab1Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36632B925CA600989B71 /* Tab1Coordinator.swift */; };
+		F01A36662B925CB000989B71 /* Tab2Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36652B925CB000989B71 /* Tab2Coordinator.swift */; };
+		F01A36682B925CB600989B71 /* Tab3Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36672B925CB600989B71 /* Tab3Coordinator.swift */; };
 		F01A366A2B925D9D00989B71 /* PodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36692B925D9D00989B71 /* PodsView.swift */; };
 		F01A366C2B925DA200989B71 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A366B2B925DA200989B71 /* SettingsView.swift */; };
-		F01A366E2B925DA600989B71 /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A366D2B925DA600989B71 /* WarningView.swift */; };
-		F01A36702B925DEF00989B71 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A366F2B925DEF00989B71 /* AlertView.swift */; };
+		F01A366E2B925DA600989B71 /* FullScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A366D2B925DA600989B71 /* FullScreenView.swift */; };
+		F01A36702B925DEF00989B71 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A366F2B925DEF00989B71 /* SheetView.swift */; };
 		F01A36722B92613300989B71 /* ChildViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36712B92613300989B71 /* ChildViewOne.swift */; };
 		F01A36742B92613700989B71 /* ChildViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36732B92613700989B71 /* ChildViewTwo.swift */; };
 		F01A36762B92613E00989B71 /* ChildViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36752B92613E00989B71 /* ChildViewThree.swift */; };
+		F04DFCC02B965769008617DB /* FullScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04DFCBF2B965769008617DB /* FullScreenCoordinator.swift */; };
 		F05CC89A2B9511D5001C1735 /* PopupViewChildOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC8992B9511D5001C1735 /* PopupViewChildOne.swift */; };
-		F05CC89C2B9517B3001C1735 /* alertViewCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC89B2B9517B3001C1735 /* alertViewCoordinatorView.swift */; };
+		F05CC89C2B9517B3001C1735 /* SheetCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC89B2B9517B3001C1735 /* SheetCoordinator.swift */; };
 		F05CC89E2B951FB9001C1735 /* PopupViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC89D2B951FB9001C1735 /* PopupViewHome.swift */; };
 		F0E96B7B2B9568730049276E /* PopupViewChildTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E96B7A2B9568730049276E /* PopupViewChildTwo.swift */; };
 /* End PBXBuildFile section */
@@ -54,18 +55,19 @@
 		F01A365A2B925A5E00989B71 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F01A365C2B925AAB00989B71 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		F01A365E2B925B1F00989B71 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		F01A36632B925CA600989B71 /* tab1CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab1CoordinatorView.swift; sourceTree = "<group>"; };
-		F01A36652B925CB000989B71 /* tab2CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab2CoordinatorView.swift; sourceTree = "<group>"; };
-		F01A36672B925CB600989B71 /* tab3CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tab3CoordinatorView.swift; sourceTree = "<group>"; };
+		F01A36632B925CA600989B71 /* Tab1Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Coordinator.swift; sourceTree = "<group>"; };
+		F01A36652B925CB000989B71 /* Tab2Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Coordinator.swift; sourceTree = "<group>"; };
+		F01A36672B925CB600989B71 /* Tab3Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Coordinator.swift; sourceTree = "<group>"; };
 		F01A36692B925D9D00989B71 /* PodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodsView.swift; sourceTree = "<group>"; };
 		F01A366B2B925DA200989B71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		F01A366D2B925DA600989B71 /* WarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
-		F01A366F2B925DEF00989B71 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		F01A366D2B925DA600989B71 /* FullScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenView.swift; sourceTree = "<group>"; };
+		F01A366F2B925DEF00989B71 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
 		F01A36712B92613300989B71 /* ChildViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewOne.swift; sourceTree = "<group>"; };
 		F01A36732B92613700989B71 /* ChildViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewTwo.swift; sourceTree = "<group>"; };
 		F01A36752B92613E00989B71 /* ChildViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewThree.swift; sourceTree = "<group>"; };
+		F04DFCBF2B965769008617DB /* FullScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoordinator.swift; sourceTree = "<group>"; };
 		F05CC8992B9511D5001C1735 /* PopupViewChildOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewChildOne.swift; sourceTree = "<group>"; };
-		F05CC89B2B9517B3001C1735 /* alertViewCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertViewCoordinatorView.swift; sourceTree = "<group>"; };
+		F05CC89B2B9517B3001C1735 /* SheetCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetCoordinator.swift; sourceTree = "<group>"; };
 		F05CC89D2B951FB9001C1735 /* PopupViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewHome.swift; sourceTree = "<group>"; };
 		F0E96B7A2B9568730049276E /* PopupViewChildTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewChildTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,14 +131,14 @@
 			isa = PBXGroup;
 			children = (
 				F01A36322B925A4300989B71 /* TabbarView.swift */,
+				F01A366F2B925DEF00989B71 /* SheetView.swift */,
+				F01A366D2B925DA600989B71 /* FullScreenView.swift */,
 				F01A365E2B925B1F00989B71 /* HomeView.swift */,
 				F01A36692B925D9D00989B71 /* PodsView.swift */,
 				F01A366B2B925DA200989B71 /* SettingsView.swift */,
-				F01A366F2B925DEF00989B71 /* AlertView.swift */,
 				F05CC89D2B951FB9001C1735 /* PopupViewHome.swift */,
 				F05CC8992B9511D5001C1735 /* PopupViewChildOne.swift */,
 				F0E96B7A2B9568730049276E /* PopupViewChildTwo.swift */,
-				F01A366D2B925DA600989B71 /* WarningView.swift */,
 				F01A36712B92613300989B71 /* ChildViewOne.swift */,
 				F01A36732B92613700989B71 /* ChildViewTwo.swift */,
 				F01A36752B92613E00989B71 /* ChildViewThree.swift */,
@@ -147,10 +149,11 @@
 		F01A36622B925B4300989B71 /* ApplicationCoordinators */ = {
 			isa = PBXGroup;
 			children = (
-				F01A36632B925CA600989B71 /* tab1CoordinatorView.swift */,
-				F01A36652B925CB000989B71 /* tab2CoordinatorView.swift */,
-				F01A36672B925CB600989B71 /* tab3CoordinatorView.swift */,
-				F05CC89B2B9517B3001C1735 /* alertViewCoordinatorView.swift */,
+				F01A36632B925CA600989B71 /* Tab1Coordinator.swift */,
+				F01A36652B925CB000989B71 /* Tab2Coordinator.swift */,
+				F01A36672B925CB600989B71 /* Tab3Coordinator.swift */,
+				F05CC89B2B9517B3001C1735 /* SheetCoordinator.swift */,
+				F04DFCBF2B965769008617DB /* FullScreenCoordinator.swift */,
 			);
 			path = ApplicationCoordinators;
 			sourceTree = "<group>";
@@ -284,23 +287,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01A36332B925A4300989B71 /* TabbarView.swift in Sources */,
-				F01A36662B925CB000989B71 /* tab2CoordinatorView.swift in Sources */,
+				F04DFCC02B965769008617DB /* FullScreenCoordinator.swift in Sources */,
+				F01A36662B925CB000989B71 /* Tab2Coordinator.swift in Sources */,
 				F05CC89E2B951FB9001C1735 /* PopupViewHome.swift in Sources */,
 				F0E96B7B2B9568730049276E /* PopupViewChildTwo.swift in Sources */,
 				F01A36722B92613300989B71 /* ChildViewOne.swift in Sources */,
-				F01A36642B925CA600989B71 /* tab1CoordinatorView.swift in Sources */,
+				F01A36642B925CA600989B71 /* Tab1Coordinator.swift in Sources */,
 				F01A36312B925A4300989B71 /* App.swift in Sources */,
 				F01A365F2B925B1F00989B71 /* HomeView.swift in Sources */,
 				F05CC89A2B9511D5001C1735 /* PopupViewChildOne.swift in Sources */,
 				F01A366A2B925D9D00989B71 /* PodsView.swift in Sources */,
-				F01A36682B925CB600989B71 /* tab3CoordinatorView.swift in Sources */,
+				F01A36682B925CB600989B71 /* Tab3Coordinator.swift in Sources */,
 				F01A36742B92613700989B71 /* ChildViewTwo.swift in Sources */,
 				F01A365B2B925A5E00989B71 /* Coordinator.swift in Sources */,
 				F01A366C2B925DA200989B71 /* SettingsView.swift in Sources */,
-				F01A36702B925DEF00989B71 /* AlertView.swift in Sources */,
+				F01A36702B925DEF00989B71 /* SheetView.swift in Sources */,
 				F01A36762B92613E00989B71 /* ChildViewThree.swift in Sources */,
-				F01A366E2B925DA600989B71 /* WarningView.swift in Sources */,
-				F05CC89C2B9517B3001C1735 /* alertViewCoordinatorView.swift in Sources */,
+				F01A366E2B925DA600989B71 /* FullScreenView.swift in Sources */,
+				F05CC89C2B9517B3001C1735 /* SheetCoordinator.swift in Sources */,
 				F01A365D2B925AAB00989B71 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

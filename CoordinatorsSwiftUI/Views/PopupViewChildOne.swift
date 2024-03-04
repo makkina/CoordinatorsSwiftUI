@@ -8,8 +8,11 @@ struct PopupViewChildOne: View {
             Image(systemName: "m1.button.horizontal.fill").font(.largeTitle)
             
             /// @action: Close Modal
-            Button { childCoordinator.closeSheet?.toggle() } label: {
-                (Text("Close Entire modal &nbsp;") + Text(Image(systemName: "xmark.circle.fill")))
+            Button {
+                childCoordinator.closeSheet?.toggle()
+                childCoordinator.closeFullScreenCover?.toggle()
+            } label: {
+                (Text("Close Entire modal (Shared Context) &nbsp;") + Text(Image(systemName: "xmark.circle.fill")))
             }
             
             HStack(spacing: 50) {
@@ -22,7 +25,7 @@ struct PopupViewChildOne: View {
                     (Text("Next &nbsp;") + Text(Image(systemName: "arrow.forward")))
                 }
             }
-            .navigationTitle("Alert View Child One")
+            .navigationTitle("Popup View Child One")
         }
     }
 }
