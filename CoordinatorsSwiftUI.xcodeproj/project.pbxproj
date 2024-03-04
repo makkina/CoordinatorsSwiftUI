@@ -46,11 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F01A362D2B925A4300989B71 /* ProjectNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01A362D2B925A4300989B71 /* CoordinatorsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01A36302B925A4300989B71 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		F01A36322B925A4300989B71 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
-		F01A363D2B925A4400989B71 /* ProjectNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01A36472B925A4400989B71 /* ProjectNavigatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectNavigatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01A363D2B925A4400989B71 /* CoordinatorsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01A36472B925A4400989B71 /* CoordinatorsSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorsSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01A365A2B925A5E00989B71 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		F01A365C2B925AAB00989B71 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		F01A365E2B925B1F00989B71 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -106,9 +106,9 @@
 		F01A362E2B925A4300989B71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F01A362D2B925A4300989B71 /* ProjectNavigator.app */,
-				F01A363D2B925A4400989B71 /* ProjectNavigatorTests.xctest */,
-				F01A36472B925A4400989B71 /* ProjectNavigatorUITests.xctest */,
+				F01A362D2B925A4300989B71 /* CoordinatorsSwiftUI.app */,
+				F01A363D2B925A4400989B71 /* CoordinatorsSwiftUITests.xctest */,
+				F01A36472B925A4400989B71 /* CoordinatorsSwiftUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,9 +158,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F01A362C2B925A4300989B71 /* ProjectNavigator */ = {
+		F01A362C2B925A4300989B71 /* CoordinatorsSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F01A36512B925A4400989B71 /* Build configuration list for PBXNativeTarget "ProjectNavigator" */;
+			buildConfigurationList = F01A36512B925A4400989B71 /* Build configuration list for PBXNativeTarget "CoordinatorsSwiftUI" */;
 			buildPhases = (
 				F01A36292B925A4300989B71 /* Sources */,
 				F01A362A2B925A4300989B71 /* Frameworks */,
@@ -170,14 +170,14 @@
 			);
 			dependencies = (
 			);
-			name = ProjectNavigator;
+			name = CoordinatorsSwiftUI;
 			productName = ProjectNavigator;
-			productReference = F01A362D2B925A4300989B71 /* ProjectNavigator.app */;
+			productReference = F01A362D2B925A4300989B71 /* CoordinatorsSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F01A363C2B925A4400989B71 /* ProjectNavigatorTests */ = {
+		F01A363C2B925A4400989B71 /* CoordinatorsSwiftUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F01A36542B925A4400989B71 /* Build configuration list for PBXNativeTarget "ProjectNavigatorTests" */;
+			buildConfigurationList = F01A36542B925A4400989B71 /* Build configuration list for PBXNativeTarget "CoordinatorsSwiftUITests" */;
 			buildPhases = (
 				F01A36392B925A4400989B71 /* Sources */,
 				F01A363A2B925A4400989B71 /* Frameworks */,
@@ -188,14 +188,14 @@
 			dependencies = (
 				F01A363F2B925A4400989B71 /* PBXTargetDependency */,
 			);
-			name = ProjectNavigatorTests;
+			name = CoordinatorsSwiftUITests;
 			productName = ProjectNavigatorTests;
-			productReference = F01A363D2B925A4400989B71 /* ProjectNavigatorTests.xctest */;
+			productReference = F01A363D2B925A4400989B71 /* CoordinatorsSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F01A36462B925A4400989B71 /* ProjectNavigatorUITests */ = {
+		F01A36462B925A4400989B71 /* CoordinatorsSwiftUIUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F01A36572B925A4400989B71 /* Build configuration list for PBXNativeTarget "ProjectNavigatorUITests" */;
+			buildConfigurationList = F01A36572B925A4400989B71 /* Build configuration list for PBXNativeTarget "CoordinatorsSwiftUIUITests" */;
 			buildPhases = (
 				F01A36432B925A4400989B71 /* Sources */,
 				F01A36442B925A4400989B71 /* Frameworks */,
@@ -206,9 +206,9 @@
 			dependencies = (
 				F01A36492B925A4400989B71 /* PBXTargetDependency */,
 			);
-			name = ProjectNavigatorUITests;
+			name = CoordinatorsSwiftUIUITests;
 			productName = ProjectNavigatorUITests;
-			productReference = F01A36472B925A4400989B71 /* ProjectNavigatorUITests.xctest */;
+			productReference = F01A36472B925A4400989B71 /* CoordinatorsSwiftUIUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -247,9 +247,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F01A362C2B925A4300989B71 /* ProjectNavigator */,
-				F01A363C2B925A4400989B71 /* ProjectNavigatorTests */,
-				F01A36462B925A4400989B71 /* ProjectNavigatorUITests */,
+				F01A362C2B925A4300989B71 /* CoordinatorsSwiftUI */,
+				F01A363C2B925A4400989B71 /* CoordinatorsSwiftUITests */,
+				F01A36462B925A4400989B71 /* CoordinatorsSwiftUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,12 +324,12 @@
 /* Begin PBXTargetDependency section */
 		F01A363F2B925A4400989B71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F01A362C2B925A4300989B71 /* ProjectNavigator */;
+			target = F01A362C2B925A4300989B71 /* CoordinatorsSwiftUI */;
 			targetProxy = F01A363E2B925A4400989B71 /* PBXContainerItemProxy */;
 		};
 		F01A36492B925A4400989B71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F01A362C2B925A4300989B71 /* ProjectNavigator */;
+			target = F01A362C2B925A4300989B71 /* CoordinatorsSwiftUI */;
 			targetProxy = F01A36482B925A4400989B71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.showpad.ProjectNavigator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showpad.CoordinatorsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -504,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.showpad.ProjectNavigator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showpad.CoordinatorsSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -596,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F01A36512B925A4400989B71 /* Build configuration list for PBXNativeTarget "ProjectNavigator" */ = {
+		F01A36512B925A4400989B71 /* Build configuration list for PBXNativeTarget "CoordinatorsSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F01A36522B925A4400989B71 /* Debug */,
@@ -605,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F01A36542B925A4400989B71 /* Build configuration list for PBXNativeTarget "ProjectNavigatorTests" */ = {
+		F01A36542B925A4400989B71 /* Build configuration list for PBXNativeTarget "CoordinatorsSwiftUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F01A36552B925A4400989B71 /* Debug */,
@@ -614,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F01A36572B925A4400989B71 /* Build configuration list for PBXNativeTarget "ProjectNavigatorUITests" */ = {
+		F01A36572B925A4400989B71 /* Build configuration list for PBXNativeTarget "CoordinatorsSwiftUIUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F01A36582B925A4400989B71 /* Debug */,

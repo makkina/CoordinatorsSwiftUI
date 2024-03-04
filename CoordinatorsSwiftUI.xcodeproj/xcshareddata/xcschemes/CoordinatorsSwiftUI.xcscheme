@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F01A362C2B925A4300989B71"
-               BuildableName = "ProjectNavigator.app"
-               BlueprintName = "ProjectNavigator"
+               BuildableName = "CoordinatorsSwiftUI.app"
+               BlueprintName = "CoordinatorsSwiftUI"
                ReferencedContainer = "container:CoordinatorsSwiftUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -35,8 +35,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F01A363C2B925A4400989B71"
-               BuildableName = "ProjectNavigatorTests.xctest"
-               BlueprintName = "ProjectNavigatorTests"
+               BuildableName = "CoordinatorsSwiftUITests.xctest"
+               BlueprintName = "CoordinatorsSwiftUITests"
                ReferencedContainer = "container:CoordinatorsSwiftUI.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -46,8 +46,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F01A36462B925A4400989B71"
-               BuildableName = "ProjectNavigatorUITests.xctest"
-               BlueprintName = "ProjectNavigatorUITests"
+               BuildableName = "CoordinatorsSwiftUIUITests.xctest"
+               BlueprintName = "CoordinatorsSwiftUIUITests"
                ReferencedContainer = "container:CoordinatorsSwiftUI.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -68,8 +68,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F01A362C2B925A4300989B71"
-            BuildableName = "ProjectNavigator.app"
-            BlueprintName = "ProjectNavigator"
+            BuildableName = "CoordinatorsSwiftUI.app"
+            BlueprintName = "CoordinatorsSwiftUI"
             ReferencedContainer = "container:CoordinatorsSwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F01A362C2B925A4300989B71"
-            BuildableName = "ProjectNavigator.app"
-            BlueprintName = "ProjectNavigator"
+            BuildableName = "CoordinatorsSwiftUI.app"
+            BlueprintName = "CoordinatorsSwiftUI"
             ReferencedContainer = "container:CoordinatorsSwiftUI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
