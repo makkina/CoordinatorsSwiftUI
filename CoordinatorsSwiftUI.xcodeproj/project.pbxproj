@@ -22,6 +22,10 @@
 		F01A36722B92613300989B71 /* ChildViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36712B92613300989B71 /* ChildViewOne.swift */; };
 		F01A36742B92613700989B71 /* ChildViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36732B92613700989B71 /* ChildViewTwo.swift */; };
 		F01A36762B92613E00989B71 /* ChildViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01A36752B92613E00989B71 /* ChildViewThree.swift */; };
+		F05CC89A2B9511D5001C1735 /* AlertViewChildOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC8992B9511D5001C1735 /* AlertViewChildOne.swift */; };
+		F05CC89C2B9517B3001C1735 /* alertViewCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC89B2B9517B3001C1735 /* alertViewCoordinatorView.swift */; };
+		F05CC89E2B951FB9001C1735 /* AlertViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05CC89D2B951FB9001C1735 /* AlertViewHome.swift */; };
+		F0E96B7B2B9568730049276E /* AlertViewChildTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E96B7A2B9568730049276E /* AlertViewChildTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		F01A36712B92613300989B71 /* ChildViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewOne.swift; sourceTree = "<group>"; };
 		F01A36732B92613700989B71 /* ChildViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewTwo.swift; sourceTree = "<group>"; };
 		F01A36752B92613E00989B71 /* ChildViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewThree.swift; sourceTree = "<group>"; };
+		F05CC8992B9511D5001C1735 /* AlertViewChildOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewChildOne.swift; sourceTree = "<group>"; };
+		F05CC89B2B9517B3001C1735 /* alertViewCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alertViewCoordinatorView.swift; sourceTree = "<group>"; };
+		F05CC89D2B951FB9001C1735 /* AlertViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewHome.swift; sourceTree = "<group>"; };
+		F0E96B7A2B9568730049276E /* AlertViewChildTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewChildTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +133,9 @@
 				F01A36692B925D9D00989B71 /* PodsView.swift */,
 				F01A366B2B925DA200989B71 /* SettingsView.swift */,
 				F01A366F2B925DEF00989B71 /* AlertView.swift */,
+				F05CC89D2B951FB9001C1735 /* AlertViewHome.swift */,
+				F05CC8992B9511D5001C1735 /* AlertViewChildOne.swift */,
+				F0E96B7A2B9568730049276E /* AlertViewChildTwo.swift */,
 				F01A366D2B925DA600989B71 /* WarningView.swift */,
 				F01A36712B92613300989B71 /* ChildViewOne.swift */,
 				F01A36732B92613700989B71 /* ChildViewTwo.swift */,
@@ -139,6 +150,7 @@
 				F01A36632B925CA600989B71 /* tab1CoordinatorView.swift */,
 				F01A36652B925CB000989B71 /* tab2CoordinatorView.swift */,
 				F01A36672B925CB600989B71 /* tab3CoordinatorView.swift */,
+				F05CC89B2B9517B3001C1735 /* alertViewCoordinatorView.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -273,10 +285,13 @@
 			files = (
 				F01A36332B925A4300989B71 /* TabbarView.swift in Sources */,
 				F01A36662B925CB000989B71 /* tab2CoordinatorView.swift in Sources */,
+				F05CC89E2B951FB9001C1735 /* AlertViewHome.swift in Sources */,
+				F0E96B7B2B9568730049276E /* AlertViewChildTwo.swift in Sources */,
 				F01A36722B92613300989B71 /* ChildViewOne.swift in Sources */,
 				F01A36642B925CA600989B71 /* tab1CoordinatorView.swift in Sources */,
 				F01A36312B925A4300989B71 /* App.swift in Sources */,
 				F01A365F2B925B1F00989B71 /* HomeView.swift in Sources */,
+				F05CC89A2B9511D5001C1735 /* AlertViewChildOne.swift in Sources */,
 				F01A366A2B925D9D00989B71 /* PodsView.swift in Sources */,
 				F01A36682B925CB600989B71 /* tab3CoordinatorView.swift in Sources */,
 				F01A36742B92613700989B71 /* ChildViewTwo.swift in Sources */,
@@ -285,6 +300,7 @@
 				F01A36702B925DEF00989B71 /* AlertView.swift in Sources */,
 				F01A36762B92613E00989B71 /* ChildViewThree.swift in Sources */,
 				F01A366E2B925DA600989B71 /* WarningView.swift in Sources */,
+				F05CC89C2B9517B3001C1735 /* alertViewCoordinatorView.swift in Sources */,
 				F01A365D2B925AAB00989B71 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
