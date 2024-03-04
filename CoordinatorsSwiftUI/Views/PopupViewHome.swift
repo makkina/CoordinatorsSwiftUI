@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AlertViewHome: View {
+struct PopupViewHome: View {
     @EnvironmentObject var childCoordinator: ApplicationCoordinator
     
     var body: some View {
@@ -15,7 +15,7 @@ struct AlertViewHome: View {
                 }
                 
                 /// @action: Go To Next Screen
-                Button { childCoordinator.push(page: .alertViewChildOne) } label: {
+                Button { childCoordinator.push(page: .popupViewChildOne) } label: {
                     (Text("Navigate to Next Screen &nbsp;") + Text(Image(systemName: "arrow.forward")))
                 }
             }
@@ -26,6 +26,6 @@ struct AlertViewHome: View {
 
 #Preview {
     NavigationStack {
-        AlertViewHome().environmentObject(ApplicationCoordinator())
+        PopupViewHome().environmentObject(ApplicationCoordinator())
     }
 }

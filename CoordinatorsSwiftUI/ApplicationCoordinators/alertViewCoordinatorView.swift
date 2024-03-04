@@ -5,7 +5,7 @@ struct alertViewCoordinatorView: View {
     
     var body: some View {
         NavigationStack(path: $childCoordinator.path) {
-            childCoordinator.build(page: .alertViewHome)
+            childCoordinator.build(page: .popupViewHome)
                 .sheet(item: $childCoordinator.sheet) {
                     childCoordinator.build(sheet: $0)
                 }

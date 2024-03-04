@@ -10,9 +10,9 @@ enum NavigationPage: String, CaseIterable, Identifiable, Hashable {
     case childViewOne
     case childViewTwo
     case childViewThree
-    case alertViewHome
-    case alertViewChildOne
-    case alertViewChildTwo
+    case popupViewHome
+    case popupViewChildOne
+    case popupViewChildTwo
 }
 
 enum Sheet: String, CaseIterable, Identifiable {
@@ -40,9 +40,9 @@ final class ApplicationCoordinator: Coordinator {
         case .childViewThree: ChildViewThree()
         
         ///@Sheet: When in popup mode
-        case .alertViewHome: AlertViewHome()
-        case .alertViewChildOne: AlertViewChildOne()
-        case .alertViewChildTwo: AlertViewChildTwo()
+        case .popupViewHome: PopupViewHome()
+        case .popupViewChildOne: PopupViewChildOne()
+        case .popupViewChildTwo: PopupViewChildTwo()
         }
     }
     
