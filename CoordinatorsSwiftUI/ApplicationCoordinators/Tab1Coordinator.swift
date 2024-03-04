@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Tab1Coordinator: View {
-    @EnvironmentObject var coordinator: ApplicationCoordinator
+    @EnvironmentObject var coordinator: RootCoordinator
     
     var body: some View {
         NavigationStack(path: $coordinator.path) {
@@ -23,5 +23,5 @@ struct Tab1Coordinator: View {
 }
 
 #Preview {
-    Tab1Coordinator().environmentObject(ApplicationCoordinator())
+    Tab1Coordinator().environmentObject(RootCoordinator())
 }

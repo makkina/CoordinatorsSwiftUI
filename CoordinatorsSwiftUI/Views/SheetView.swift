@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct SheetView: View {
-    @EnvironmentObject var coordinator: ApplicationCoordinator
-    @StateObject var childCoordinator = ApplicationCoordinator()
+    @EnvironmentObject var coordinator: RootCoordinator
+    @StateObject var childCoordinator = RootCoordinator()
     
     var body: some View {
         VStack {
@@ -17,6 +17,6 @@ struct SheetView: View {
 
 #Preview {
     NavigationStack {
-        SheetView().environmentObject(ApplicationCoordinator())
+        SheetView().environmentObject(RootCoordinator())
     }
 }

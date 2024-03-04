@@ -8,9 +8,9 @@ enum Tab {
 
 struct TabbarView: View {
     @State private var selectedTab: Tab = .tab1
-    @StateObject var tab1Coordinator = ApplicationCoordinator()
-    @StateObject var tab2Coordinator = ApplicationCoordinator()
-    @StateObject var tab3Coordinator = ApplicationCoordinator()
+    @StateObject var tab1Coordinator = RootCoordinator()
+    @StateObject var tab2Coordinator = RootCoordinator()
+    @StateObject var tab3Coordinator = RootCoordinator()
     
     var body: some View {
         VStack {

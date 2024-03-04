@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct PopupViewHome: View {
-    @EnvironmentObject var childCoordinator: ApplicationCoordinator
+    @EnvironmentObject var childCoordinator: RootCoordinator
     
     var body: some View {
         ZStack {
@@ -41,6 +41,6 @@ struct PopupViewHome: View {
 
 #Preview {
     NavigationStack {
-        PopupViewHome().environmentObject(ApplicationCoordinator())
+        PopupViewHome().environmentObject(RootCoordinator())
     }
 }

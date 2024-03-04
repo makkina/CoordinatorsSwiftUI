@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SheetCoordinator: View {
-    @EnvironmentObject var childCoordinator: ApplicationCoordinator
+    @EnvironmentObject var childCoordinator: RootCoordinator
     
     var body: some View {
         NavigationStack(path: $childCoordinator.path) {
@@ -23,5 +23,5 @@ struct SheetCoordinator: View {
 }
 
 #Preview {
-    SheetCoordinator().environmentObject(ApplicationCoordinator())
+    SheetCoordinator().environmentObject(RootCoordinator())
 }

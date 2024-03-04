@@ -27,7 +27,7 @@ enum FullScreenCover: String, CaseIterable, Identifiable {
     case fullScreenView
 }
 
-final class ApplicationCoordinator: Coordinator {
+final class RootCoordinator: Coordinator {
     
     @ViewBuilder
     func build(page: NavigationPage) -> some View {

@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct FullScreenView: View {
-    @EnvironmentObject var coordinator: ApplicationCoordinator
-    @StateObject var childCoordinator = ApplicationCoordinator()
+    @EnvironmentObject var coordinator: RootCoordinator
+    @StateObject var childCoordinator = RootCoordinator()
     
     var body: some View {
         VStack {
@@ -17,6 +17,6 @@ struct FullScreenView: View {
 
 #Preview {
     NavigationStack {
-        FullScreenView().environmentObject(ApplicationCoordinator())
+        FullScreenView().environmentObject(RootCoordinator())
     }
 }
