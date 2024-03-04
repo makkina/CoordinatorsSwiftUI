@@ -56,8 +56,7 @@ final class ApplicationCoordinator: Coordinator {
     @ViewBuilder
     func build(fullScreenCover: FullScreenCover) -> some View {
         switch fullScreenCover {
-        case .warningView:
-            WarningView()
+        case .warningView: WarningView()
         }
     }
 }

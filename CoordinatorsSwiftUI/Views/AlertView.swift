@@ -7,9 +7,8 @@ struct AlertView: View {
     var body: some View {
         VStack {
             alertViewCoordinatorView()
-                .background(.red)
                 .environmentObject(childCoordinator)
-                .onChange(of: childCoordinator.closeSheet) {
+                .onChange(of: childCoordinator.closeSheet) { _ in
                     coordinator.dissmissSheet()
                 }
         }
