@@ -10,7 +10,6 @@ enum NavigationPage: String, CaseIterable, Identifiable, Hashable {
     case childViewOne
     case childViewTwo
     case childViewThree
-    case alertView
     case alertViewHome
     case alertViewChildOne
     case alertViewChildTwo
@@ -33,37 +32,24 @@ final class ApplicationCoordinator: Coordinator {
     @ViewBuilder
     func build(page: NavigationPage) -> some View {
         switch page {
-            
-        case .homeViewOne:
-            HomeView()
-        case .homeViewTwo:
-            PodsView()
-        case .homeViewThree:
-            SettingsView()
-        case .childViewOne:
-            ChildViewOne()
-        case .childViewTwo:
-            ChildViewTwo()
-        case .childViewThree:
-            ChildViewThree()  
+        case .homeViewOne: HomeView()
+        case .homeViewTwo: PodsView()
+        case .homeViewThree: SettingsView()
+        case .childViewOne: ChildViewOne()
+        case .childViewTwo: ChildViewTwo()
+        case .childViewThree: ChildViewThree()
         
-        // When in popup mode
-        case .alertView:
-            AlertView()
-        case .alertViewHome:
-            AlertViewHome()
-        case .alertViewChildOne:
-            AlertViewChildOne()
-        case .alertViewChildTwo:
-            AlertViewChildTwo()
+        ///@Sheet: When in popup mode
+        case .alertViewHome: AlertViewHome()
+        case .alertViewChildOne: AlertViewChildOne()
+        case .alertViewChildTwo: AlertViewChildTwo()
         }
     }
     
     @ViewBuilder
     func build(sheet: Sheet) -> some View {
         switch sheet {
-        case .alertView:
-            AlertView()
+        case .alertView: AlertView()
         }
     }
     

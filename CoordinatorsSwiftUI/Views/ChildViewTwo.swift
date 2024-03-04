@@ -9,21 +9,15 @@ struct ChildViewTwo: View {
                 .resizable()
                 .frame(width: 50, height: 50)
             Text("Welcome to Child View 2!")
-            Button {
-                coordinator.push(page: .childViewThree)
-            } label: {
+            
+            /// CALL TO ACTIONS
+            Button { coordinator.push(page: .childViewThree) } label: {
                 Text("Navigate to Child View 3")
             }
-
-            Button {
-                coordinator.pop()
-            } label: {
+            Button { coordinator.pop() } label: {
                 Text("Pop")
             }
-            
-            Button {
-                coordinator.popToRoot()
-            } label: {
+            Button { coordinator.popToRoot() } label: {
                 Text("Pop To Root")
             }
         }

@@ -5,11 +5,9 @@ struct WarningView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
+            VStack(spacing: 10) {
                 Text("Warning View!")
-                Button {
-                    coordinator.dissmissFullscreenCover()
-                } label: {
+                Button { coordinator.dissmissFullscreenCover() } label: {
                     Text("Dismiss FullscreenCover")
                 }
             }

@@ -5,32 +5,31 @@ struct HomeView: View {
     
     var body: some View {
         VStack(spacing: 10) {
+            /// BODY
             Spacer()
             Image(systemName: "house")
                 .resizable()
                 .frame(width: 60, height: 50)
             Text("Home")
-            
             Button { coordinator.push(page: .childViewOne) } label: {
                 Text("Navigate to Child View One")
             }
             
+            /// FOOTER
             Spacer()
-            
             Button { coordinator.present(sheet: .alertView) } label: {
                 Text("Present to Alert View")
             }
-            
             Button { coordinator.present(fullScreenCover: .warningView) } label: {
                 Text("Present to Warning View")
             }
         }
+        .navigationTitle("Home")
         .toolbar {
             Button("ToolbarButton") {
                 print("Hello Home")
             }
         }
-        .navigationTitle("Home")
     }
 }
 
