@@ -8,3 +8,10 @@ struct ProjectNavigatorApp: App {
         }
     }
 }
+
+/**
+ @TODO:
+ 
+ 1.  Use Coordinators to `close fullScreenCover`
+ 2.  Use Coordinators to `show` Views (~ push full view without animation)
+ */
