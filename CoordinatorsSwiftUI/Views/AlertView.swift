@@ -2,23 +2,16 @@ import SwiftUI
 
 struct AlertView: View {
     @EnvironmentObject var coordinator: ApplicationCoordinator
+    @StateObject var childCoordinator = ApplicationCoordinator()
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                Text("PopupView: Hello, World!")
-                Button {
+        VStack {
+            alertViewCoordinatorView()
+                .background(.red)
+                .environmentObject(childCoordinator)
+                .onChange(of: childCoordinator.closeSheet) {
                     coordinator.dissmissSheet()
-                } label: {
-                    Text("Dismiss Sheet")
                 }
-                
-                Button {
-                    coordinator.push(page: .childViewOne)
-                } label: {
-                    Text("Try(?) push to ChildView One, Inside (AlertView 'Sheet' Context")
-                }
-            }
         }
     }
 }

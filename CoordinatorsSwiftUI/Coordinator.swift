@@ -18,6 +18,7 @@ class Coordinator: CoordinatorProtocol, ObservableObject {
     @Published var path = NavigationPath()
     @Published var sheet: Sheet?
     @Published var fullScreenCover: FullScreenCover?
+    @Published var closeSheet: Bool? = false
     
     func push(page: NavigationPage) {
         self.path.append(page)

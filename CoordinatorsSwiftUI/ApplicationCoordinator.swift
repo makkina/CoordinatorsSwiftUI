@@ -10,6 +10,10 @@ enum NavigationPage: String, CaseIterable, Identifiable, Hashable {
     case childViewOne
     case childViewTwo
     case childViewThree
+    case alertView
+    case alertViewHome
+    case alertViewChildOne
+    case alertViewChildTwo
 }
 
 enum Sheet: String, CaseIterable, Identifiable {
@@ -41,7 +45,17 @@ final class ApplicationCoordinator: Coordinator {
         case .childViewTwo:
             ChildViewTwo()
         case .childViewThree:
-            ChildViewThree()
+            ChildViewThree()  
+        
+        // When in popup mode
+        case .alertView:
+            AlertView()
+        case .alertViewHome:
+            AlertViewHome()
+        case .alertViewChildOne:
+            AlertViewChildOne()
+        case .alertViewChildTwo:
+            AlertViewChildTwo()
         }
     }
     
