@@ -27,6 +27,11 @@ struct ChildViewOne: View {
                 Text("Pop To Root")
             }
         }
+        .toolbar {
+            Button("ToolbarButton") {
+                print("Hello ChildViewOne")
+            }
+        }
         .navigationTitle("Child View One")
     }
 }

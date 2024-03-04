@@ -25,6 +25,11 @@ struct HomeView: View {
                 Text("Present to Warning View")
             }
         }
+        .toolbar {
+            Button("ToolbarButton") {
+                print("Hello Home")
+            }
+        }
         .navigationTitle("Home")
     }
 }
