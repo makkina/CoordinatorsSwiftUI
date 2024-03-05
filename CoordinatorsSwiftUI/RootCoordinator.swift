@@ -28,6 +28,23 @@ enum FullScreenCover: String, CaseIterable, Identifiable {
 }
 
 final class RootCoordinator: Coordinator {
+    /// ChildCoordinators
+    @Published var tab1Coordinator: Coordinator
+    @Published var tab2Coordinator: Coordinator
+    @Published var tab3Coordinator: Coordinator
+    
+    init(
+        tab1Coordinator: Coordinator,
+        tab2Coordinator: Coordinator,
+        tab3Coordinator: Coordinator
+    ) {
+        self.tab1Coordinator = tab1Coordinator
+        self.tab2Coordinator = tab2Coordinator
+        self.tab3Coordinator = tab3Coordinator
+    }
+}
+
+extension Coordinator {
     
     @ViewBuilder
     func build(page: NavigationPage) -> some View {

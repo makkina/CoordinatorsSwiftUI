@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChildViewTwo: View {
-    @EnvironmentObject var coordinator: RootCoordinator
+    @EnvironmentObject var coordinator: Coordinator
     
     var body: some View {
         VStack(spacing: 20) {
@@ -27,6 +27,6 @@ struct ChildViewTwo: View {
 
 #Preview {
     NavigationStack {
-        ChildViewTwo().environmentObject(RootCoordinator())
+        ChildViewTwo().environmentObject(Coordinator())
     }
 }

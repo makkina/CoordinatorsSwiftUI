@@ -8,29 +8,27 @@ enum Tab {
 
 struct TabbarView: View {
     @State private var selectedTab: Tab = .tab1
-    @StateObject var tab1Coordinator = RootCoordinator()
-    @StateObject var tab2Coordinator = RootCoordinator()
-    @StateObject var tab3Coordinator = RootCoordinator()
+    @EnvironmentObject var rootCoordinator: RootCoordinator
     
     var body: some View {
         VStack {
             TabView(selection: tabSelection()) {
                 Tab1Coordinator()
-                    .environmentObject(tab1Coordinator)
+                    .environmentObject(rootCoordinator.tab1Coordinator)
                     .tabItem {
                         Label("Home", systemImage: "house")
                     }
                     .tag(Tab.tab1)
                 
                 Tab2Coordinator()
-                    .environmentObject(tab2Coordinator)
+                    .environmentObject(rootCoordinator.tab2Coordinator)
                     .tabItem {
                         Label("Apple TV", systemImage: "homepod.and.appletv")
                     }
                     .tag(Tab.tab2)
                 
                 Tab3Coordinator()
-                    .environmentObject(tab3Coordinator)
+                    .environmentObject(rootCoordinator.tab3Coordinator)
                     .tabItem {
                         Label("Settings", systemImage: "gear")
                     }
@@ -48,20 +46,20 @@ private extension TabbarView {
             
             /// TAB #1
             if (tappedTab == self.selectedTab) && (self.selectedTab == .tab1) {
-                if !tab1Coordinator.path.isEmpty {
-                    tab1Coordinator.popToRoot()
+                if !rootCoordinator.tab1Coordinator.path.isEmpty {
+                    rootCoordinator.tab1Coordinator.popToRoot()
                 }
             }
             /// TAB #2
             else if tappedTab == self.selectedTab && self.selectedTab == .tab2 {
-                if !tab2Coordinator.path.isEmpty {
-                    tab2Coordinator.popToRoot()
+                if !rootCoordinator.tab2Coordinator.path.isEmpty {
+                    rootCoordinator.tab2Coordinator.popToRoot()
                 }
             }
             /// TAB #3
             else if tappedTab == self.selectedTab && self.selectedTab == .tab3 {
-                if !tab3Coordinator.path.isEmpty {
-                    tab3Coordinator.popToRoot()
+                if !rootCoordinator.tab3Coordinator.path.isEmpty {
+                    rootCoordinator.tab3Coordinator.popToRoot()
                 }
             }
             

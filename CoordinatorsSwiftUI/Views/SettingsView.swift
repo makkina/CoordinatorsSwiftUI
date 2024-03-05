@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @EnvironmentObject var coordinator: RootCoordinator
+    @EnvironmentObject var coordinator: Coordinator
     
     var body: some View {
         VStack(spacing: 10) {
@@ -30,6 +30,6 @@ struct SettingsView: View {
 
 #Preview {
     NavigationStack {
-        SettingsView().environmentObject(RootCoordinator())
+        SettingsView().environmentObject(Coordinator())
     }
 }

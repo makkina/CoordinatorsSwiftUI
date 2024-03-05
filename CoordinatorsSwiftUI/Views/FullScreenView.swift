@@ -1,15 +1,15 @@
 import SwiftUI
 
 struct FullScreenView: View {
-    @EnvironmentObject var coordinator: RootCoordinator
-    @StateObject var childCoordinator = RootCoordinator()
+    @EnvironmentObject var parentCoordinator: Coordinator
+    @StateObject var coordinator = Coordinator()
     
     var body: some View {
         VStack {
             FullScreenCoordinator()
-                .environmentObject(childCoordinator)
-                .onChange(of: childCoordinator.closeFullScreenCover) { _ in
-                    coordinator.dissmissFullscreenCover()
+                .environmentObject(coordinator)
+                .onChange(of: coordinator.closeFullScreenCover) { _ in
+                    parentCoordinator.dissmissFullscreenCover()
                 }
         }
     }
@@ -17,6 +17,6 @@ struct FullScreenView: View {
 
 #Preview {
     NavigationStack {
-        FullScreenView().environmentObject(RootCoordinator())
+        FullScreenView().environmentObject(Coordinator())
     }
 }

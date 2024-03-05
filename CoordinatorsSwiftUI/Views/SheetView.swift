@@ -1,15 +1,15 @@
 import SwiftUI
 
 struct SheetView: View {
-    @EnvironmentObject var coordinator: RootCoordinator
-    @StateObject var childCoordinator = RootCoordinator()
+    @EnvironmentObject var parentCoordinator: Coordinator
+    @StateObject var coordinator = Coordinator()
     
     var body: some View {
         VStack {
             SheetCoordinator()
-                .environmentObject(childCoordinator)
-                .onChange(of: childCoordinator.closeSheet) { _ in
-                    coordinator.dissmissSheet()
+                .environmentObject(coordinator)
+                .onChange(of: coordinator.closeSheet) { _ in
+                    parentCoordinator.dissmissSheet()
                 }
         }
     }
@@ -17,6 +17,6 @@ struct SheetView: View {
 
 #Preview {
     NavigationStack {
-        SheetView().environmentObject(RootCoordinator())
+        SheetView().environmentObject(Coordinator())
     }
 }

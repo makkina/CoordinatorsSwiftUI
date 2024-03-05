@@ -1,19 +1,19 @@
 import SwiftUI
 
 struct SheetCoordinator: View {
-    @EnvironmentObject var childCoordinator: RootCoordinator
+    @EnvironmentObject var coordinator: Coordinator
     
     var body: some View {
-        NavigationStack(path: $childCoordinator.path) {
-            childCoordinator.build(page: .popupViewHome)
-                .sheet(item: $childCoordinator.sheet) {
-                    childCoordinator.build(sheet: $0)
+        NavigationStack(path: $coordinator.path) {
+            coordinator.build(page: .popupViewHome)
+                .sheet(item: $coordinator.sheet) {
+                    coordinator.build(sheet: $0)
                 }
                 .navigationDestination(for: NavigationPage.self) {
-                    childCoordinator.build(page: $0)
+                    coordinator.build(page: $0)
                 }
-                .fullScreenCover(item: $childCoordinator.fullScreenCover) {
-                    childCoordinator.build(fullScreenCover: $0)
+                .fullScreenCover(item: $coordinator.fullScreenCover) {
+                    coordinator.build(fullScreenCover: $0)
                 }
                 .onOpenURL {
                     print("Some code for handling url \($0.absoluteString)")
@@ -23,5 +23,5 @@ struct SheetCoordinator: View {
 }
 
 #Preview {
-    SheetCoordinator().environmentObject(RootCoordinator())
+    SheetCoordinator().environmentObject(Coordinator())
 }
